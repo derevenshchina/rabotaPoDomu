@@ -41,7 +41,7 @@ void myInterrupt5 (void) { ++globalCounter [5] ;}
 int main (void)
 {
    int gotOne, pin;
-   myCounter[8];
+   int myCounter[8];
 
    for (pin = 0; pin <6; pin++)
       /* Initialize to zero */
