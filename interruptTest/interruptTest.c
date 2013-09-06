@@ -3,7 +3,7 @@
  * Use wiringPiISR() to trigger something to happen on a logic level
  * state change.
  * 
- * derived from isr.c from wiringPi
+ * based off of isr.c from wiringPi
  */ 
 
 #include <stdio.h>
@@ -50,9 +50,9 @@ int main (void)
    /* Mandidtory call to wiringPiSetup */
    wiringPiSetup();
 
-   /* calls to watch for interrupts */
+   /* calls to watch for interrupts 
+    * need to monitor 6 zones */
    wiringPiISR(0, INT_EDGE_RISING, &myInterrupt0);
-   /* Start with just one for now, will uncomment the rest later */
    wiringPiISR(1, INT_EDGE_RISING, &myInterrupt1);
    wiringPiISR(2, INT_EDGE_RISING, &myInterrupt2);
    wiringPiISR(3, INT_EDGE_RISING, &myInterrupt3);
