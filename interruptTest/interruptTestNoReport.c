@@ -19,7 +19,7 @@
  * Needs to be declared as volatile to make sure the compiler doesn't cache it.
  */
 
-static volatile int globalCounter[8];
+static volatile int globalCounter[6];
 
 /*
  * myInterrupt:
